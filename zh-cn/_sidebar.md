@@ -2,7 +2,6 @@ PyAIO是我学习Python过程中的一些总结，我认为总结能让一个人
 
 - 概览
   - [简介](zh-cn/intro)
-  - [快速开始](zh-cn/quickstart)
   
 - 项目发布
   - [版本日志](zh-cn/changelog)

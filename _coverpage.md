@@ -1,6 +1,7 @@
 <p align="center">
- <img src="https://gitee.com/choyalee/fig_bed/raw/master/img/TunnelBear.png" alt="pyecharts logo" width=200 height=200 />
+ <img src="./imgs/TunnelBear.png" alt="pyecharts logo" width=200 height=200 />
 </p>
+
 
 # PyAIO
 
