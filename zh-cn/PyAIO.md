@@ -1,7 +1,3 @@
-# Python-All-In-One PyAIO
-
-[TOC]
-
 ## `Recommended`
 
 #### Dcumentation
