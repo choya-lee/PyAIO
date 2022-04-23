@@ -32,8 +32,6 @@ SQL 语言的作用：
 mysql -u root -p
 ```
 
-![image-20220415224121253](https://gitee.com/choyalee/fig_bed/raw/master/img/info.png)
-
 或者直接打开`MySQL Command Line Client`
 
 最初，都是使用 root 用户登录，工作中如果一直用 root 用户登录，因为权限太大，风险是很大的，所以等创建好权限适合的用户后，就不要经常登录 root 用户了。
@@ -45,8 +43,6 @@ mysql -u root -p
 ```bash
 show databases;
 ```
-
-![image-20220415224225270](https://gitee.com/choyalee/fig_bed/raw/master/img/showdb.png)
 
 刚安装 MySQL 时，默认有四个数据库，information_schema，mysql，perfomance_schema，sys 。通常情况下，我们不会直接使用这四个数据库，但千万不要把这四个数据库删了，否则会带来很多不必要的麻烦。如果不小心删了，建议是重新安装 MySQL ，在重装之前把自己的数据迁移出来备份好，或者从其他服务器上迁移一个相同的数据库过来。
 
@@ -196,27 +192,50 @@ alter table Phone_table change name pname CHAR(18);
 
 MySQL 中常用的字段类型有以下这些：
 
-1. 整数类型
+- 整数类型
 
-![img](https://pic4.zhimg.com/80/v2-26c003eeb44ff629ca5695b070ae7ed7_720w.jpg)
+  | 数据类型  | 数据范围       |
+  | --------- | -------------- |
+  | TINTINT   | -128 ~ 127     |
+  | SMALLINT  | -32768 ~ 32767 |
+  | MEDIUMINT | -2^23 ~ 2^23-1 |
+  | INT       | -2^31 ~ 2^31-1 |
+  | BIGINT    | -2^63 ~ 2^63-1 |
 
-2. 字符串类型
+- 字符串类型
 
-![img](https://pic3.zhimg.com/80/v2-780b61ef48a602220b11d20a1a7b6a86_720w.jpg)
+  | 数据类型   | 字节范围   | 用途               |
+  | ---------- | ---------- | ------------------ |
+  | CHAR(n)    | 0 - 255    | 定义字符串         |
+  | VARCHAR(n) | 0 - 65535  | 变长字符串         |
+  | TEXT       | 0 - 65535  | 长文本数据         |
+  | LONGTEXT   | 0 - 2^32-1 | 极大文本数据       |
+  | BLOB       | 0 - 65535  | 二进制长文本数据   |
+  | LONGBLOB   | 0 - 2^32-1 | 二进制极大文本数据 |
 
-3. 小数类型
+- 小数类型
 
 m 表示浮点数的总长度，n 表示小数点后有效位数。
 
-![img](https://pic2.zhimg.com/80/v2-68dd03a3acca58058f6acdd6b2460d19_720w.jpg)
+| 数据类型 | 数据用法     | 数据范围   |
+| -------- | ------------ | ---------- |
+| Flaot    | Flaot(m,n)   | 7位有效数  |
+| Double   | Double(m,n)  | 15位有效数 |
+| Decimal  | Decimal(m,n) | 28位有效数 |
 
-4. 时间类型
+- 时间类型
 
-![img](https://pic4.zhimg.com/80/v2-e7adf0da5d85f9af6cd6535f510b5e07_720w.jpg)
+  | 数据类型  | 格式                   | 用途       |
+  | --------- | ---------------------- | ---------- |
+  | DATE      | YYYY-MM-DD             | 日期       |
+  | TIME      | HH:MM:SS               | 时间       |
+  | YEAR      | YYYY                   | 年份       |
+  | DATETIME  | YYYY-MM-DD HH:MM:SS    | 日期和时间 |
+  | TIMESTAMP | 10位或13位整数（秒数） | 时间戳     |
 
-5. 枚举类型
+- 枚举类型
 
 enum(枚举值1,枚举值2,...)
 
-枚举类型只能在列出的值中选择一个。
+枚举类型只能在列出的值中选择一个
 

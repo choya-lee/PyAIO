@@ -3,8 +3,9 @@ PyAIO是我学习Python过程中的一些总结，我认为总结能让一个人
 - 概览
   - [简介](zh-cn/intro)
   - [Python](zh-cn/PyAIO)
+  - [Regex](zh-cn/regex.md)
   - [SQL](zh-cn/mysql)
-    - [PyMySQL](zh-cn/PyMySQL)
+  - [PyMySQL](zh-cn/PyMySQL)
   
 - 项目发布
   - [版本日志](zh-cn/changelog)
