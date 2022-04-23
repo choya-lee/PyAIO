@@ -8,9 +8,9 @@
     <meta name="description" content="Description">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="./static/vue.css">
-    <!-- Theme: Simple Dark -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+    <!-- <link rel="stylesheet" href="./static/vue.css"> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -21,29 +21,33 @@
         name: 'PyAIO',
         repo: 'choya-lee/PyAIO',
         mergeNavbar: true,
+        logo: './imgs/logo.png',
         coverpage: true,
         autoHeader: true,
         loadSidebar: true,
         loadNavbar: true,
         subMaxLevel: 2,
         auto2top: true,
+        externalLinkTarget: '_blank',
         homepage: 'zh-cn/README.md',
-        formatUpdated: '{MM}/{DD} {HH}:{mm}',
-        formatUpdated: function(time) {
-            // ...
-
-            return time;
+        progress: {
+            position: "top",
+            color: "var(--theme-color,#42b983)",
+            height: "3px",
+        },
+        timeUpdater: {
+            text: ">Last Modify: {docsify-updated}",
+            formatUpdated: "{YYYY}/{MM}/{DD}",
+            whereToPlace: "top"
         },
         search: {
             placeholder: {
                 '/': '搜索',
                 '/zh-cn/': '搜索',
-                '/en-us/': 'Type to search'
             },
             noData: {
                 '/': '找不到结果',
                 '/zh-cn/': '找不到结果',
-                '/en-us/': 'No Results'
             }
         },
         plugins: [
@@ -52,7 +56,7 @@
                     '<hr/>',
                     '<footer>',
                     '<span><a href="https://github.com/choya-lee">PyAIO</a> &copy;2022.</span>',
-                    '<span>Powered By <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>',
+                    '<span>Powered by <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>',
                     '</footer>'
                 ].join('');
 
@@ -63,6 +67,7 @@
         ]
     }
 </script>
+<script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
 <script src="./static/docsify.min.js"></script>
 <script src="./static/search.js"></script>
 <script src="./static/zoom-image.js"></script>
@@ -70,6 +75,9 @@
 <script src="./static/prism-sql.min.js"></script>
 <script src="./static/prism-bash.min.js"></script>
 <script src="./static/prism-shell-session.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 </body>
 
 </html>
