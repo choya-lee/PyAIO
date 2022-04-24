@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./imgs/logo.png" width="400"/>
+<img src="https://cdn.jsdelivr.net/gh/choya-lee/PyAIO@master/imgs/logo.png" width="400"/>
 </div>
 
 <br>
@@ -14,7 +14,7 @@
 
 # PyAIO
 ```
-PyAIO是我学习Python过程中的一些个人总结，我认为总结能让一个人更好更快的掌握知识。此项目记录的内容可能比较琐碎，但是全面，并且在持续更新中......
+PyAIO是我学习Python过程中的一些个人记录，我认为总结能让一个人更好更快的掌握知识。此项目记录的内容可能比较琐碎，但是全面，并且在持续更新中……
 如果这个项目对你有帮助，你可以star这个项目以跟进接下来的更新。
 ```
 
@@ -34,7 +34,8 @@ PyAIO是我学习Python过程中的一些个人总结，我认为总结能让一
 
 # Donation
 
+如果你觉得此项目对你有帮助，或者想对我微小的工作一点支持，欢迎给我[捐赠](https://choya-lee.github.io/Sponsor/)。
+
 <div don='donate' align='center'>
 <iframe src="https://choya-lee.github.io/Sponsor/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
 </div>
-

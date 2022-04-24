@@ -212,7 +212,6 @@ Python
 以下代码段是另一种执行方式，可以直接传递参数 -
 
 ```python
- 
 ..................................
 user_id = "test123"
 password = "password"
