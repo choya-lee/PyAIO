@@ -4,6 +4,7 @@ PyAIO是我学习Python过程中的一些总结，我认为总结能让一个人
   - [简介](zh-cn/intro)
   - [Python](zh-cn/PyAIO)
   - [Regex](zh-cn/regex.md)
+  - [SciencePlots](zh-cn/module/plot/SciencePlots)
   - [SQL](zh-cn/mysql)
   - [PyMySQL](zh-cn/PyMySQL)
   
@@ -14,4 +15,3 @@ PyAIO是我学习Python过程中的一些总结，我认为总结能让一个人
   - [参与贡献](zh-cn/contribution)
   
   - [捐赠](zh-cn/donate)
-  
