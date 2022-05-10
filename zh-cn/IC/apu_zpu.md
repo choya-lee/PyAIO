@@ -1,5 +1,3 @@
-# APU-ZPU
-
 - APU（**Accelerated Processing Unit**）加速度处理器
 
 AMD推出的处理器，首次将CPU和独显核心做在一个晶片上，把CPU擅长的标量运算与传统上只有GPU才具备的并行矢量运算结合起来。
