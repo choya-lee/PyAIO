@@ -86,6 +86,13 @@ trusted-host=mirrors.aliyun.com
 conda --version
 conda list
 conda update conda
+
+# base不同版本历史
+conda list --revisions
+# 重置/回滚base环境
+conda install --revision [revision number]
+# eg:
+conda install --revision 0
 ```
 
 ##### conda change source
